@@ -1,0 +1,55 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.check-label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    cursor:pointer;
+
+}
+
+.check-circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.check-input:checked ~ .check-circle{
+    background-image: url("../images/footbell.svg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.check-input:checked ~ .check-circle2{
+    background-image: url(../images/basketball.svg);
+}
+.check-input:checked ~ .check-circle3{
+    background-image: url(../images/tennsi.svg);
+}
+.check-input:checked ~ .check-circle4{
+    background-image: url(../images/xokkey.svg);
+}
+
+.check{
+    width: 100px;
+    border-radius: 10px;
+}
+.check:hover{
+    background-color: blue;
+    border: 1px solid red;
+    
+}
